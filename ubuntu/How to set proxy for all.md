@@ -25,5 +25,6 @@ Then try to run `systemctl start ""` to start. Run `systemctl status ""` to see 
 ```
 http_proxy=http://localhost:1111
 https_proxy=http://localhost:1111
-no_proxy="localhost,127.0.*,192.168.*,::1"
+no_proxy="localhost,127.0.0.0/16,192.168.0.0/16,10.96.0.0/12,::1"
+
 ```
